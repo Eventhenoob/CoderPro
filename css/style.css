@@ -1,0 +1,438 @@
+/*   Halper Classes  */
+.margin-top--small {
+    margin-top: 30px;
+}
+/*   Basic  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #eaeaea;
+    font-size: 20px;
+}
+
+/*   Buttons */
+.btn:link, 
+.btn:visited {
+    
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #13bb8c;
+    
+}
+.btn:hover, 
+.btn:active {
+    background-color: #0b8562;
+} 
+
+.btn-readMore:link,
+.btn-readMore:visited {
+    align-self: end;
+    text-align: center;
+}
+
+
+.btn-next:link,
+.btn-next:visited {
+    border-top-right-radius: 20px;
+}
+
+.btn-prev:link,
+.btn-prev:visited {
+    border-top-left-radius: 20px;
+}
+
+.btn--prac:link,
+.btn--prac:visited {
+    background-color: #ebe7e7;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #2a2a2acf;
+    text-decoration: none;
+}
+.btn--sort span {
+    color: #09d198
+}
+
+/*   headings */
+
+.heading__one {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.header{
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+/*   header / navigation */
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-nav__logo {
+    width: 200px
+}
+.header__nav {
+    list-style: none;
+}
+
+
+.main-nav__item {
+    padding-right: 50px;
+}
+
+.main-nav__link:link,
+.main-nav__link:visited
+{
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+    color: rgb(0, 187, 255);
+}
+
+.main-nav__link--login:link,
+.main-nav__link--login:visited {
+    display: inline-block;
+    background-color: #13bb8c;
+    color: #fff;
+    padding: 10px 20px;
+    
+}
+
+.main-nav__link--login:active,
+.main-nav__link--login:hover { 
+    background-color: #0c8966;
+    
+}
+
+/*   Main for index.html  */
+
+.index--main {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.problem__set {
+    box-shadow: -3px  2px 10px rgba(0, 0, 0, 0.253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    background-color: #fff;
+    padding: 0 30px;
+}
+
+.problem__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding: 30px;
+    background-color: rgb(248, 248, 248);
+}
+
+.problem__box:not(:last-child) {
+    margin-bottom: 40px;
+}
+.problem__box--number {
+    color: rgb(19, 187, 140);
+}
+
+.problem__navigation-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index--main__aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__list {
+    list-style: none;
+}
+
+.aside__list-box:not(:last-child) {
+    margin-bottom: 50px;  
+}
+
+.aside__list-box {
+    border-radius: 10PX;
+    margin-left: 30px;
+    padding: 30px;
+    box-shadow: -3px  2px 10px rgba(0, 0, 0, 0.148);
+    background-color: #fff;
+}
+
+
+.aside__list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.aside__list-link:link,
+.aside__list-link:visited
+{
+    color: rgb(16, 164, 164);
+    text-decoration: none;
+}
+.aside__list-link:active,
+.aside__list-link:hover {
+    color: #797979;
+}
+
+.aside__list-box .btn-readMore {
+    display: block;
+    
+    margin-top: 30px;
+}
+
+
+
+/*   practice.html  */
+.practice--container {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+.practice__head {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.parctice__head--header {
+    font-weight: 100;
+}
+
+
+.practice__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 30px;
+}
+.pratice--box {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3e3e3;
+}
+
+
+
+.parctice__asked-in {
+    font-size: 12px;
+    color: #0b8562;
+    margin-top: 7px;
+}
+.parctice__asked-in:not(:last-child) {
+    margin-right: 5px;
+}
+
+.asked_in--box {
+    display: flex;
+    
+}
+
+/*   contact.html  */
+.contact--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.contatct--box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.heading--main-contact span {
+    color: #09d198;
+}
+.heading--main-contact {
+    color: red;
+}
+
+.expert__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact--form {
+    height: 400px;
+    width: 500px;
+}
+.form__item {
+    width: 100%;
+
+}
+
+.form__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.form__input {
+    width: 90%;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form__input:focus {
+    border: none;
+    outline: none;
+}
+
+
+.expert--box {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: -3px  2px 10px rgba(0, 0, 0, 0.148);
+    text-align: center;
+}
+.expert__para {
+    margin-top: 20px;
+    font-size: 13px;
+}
+.expert__figure--container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+/*   Sign-Up/ Log-In  */
+/* Full-width input fields */
+
+.login--main {
+    margin: 30px auto;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+}
+.signup__form {
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    background-color: #eee;
+}
+.signup--input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff;
+  }
+  
+  
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  .signup-btn--box {
+      display: flex;
+      
+  }
+
+/*   Footer  */
+.footer {
+    padding: 30px 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+.footer-div {
+    width: 33.33%;
+    display: flex;
+    
+}
+
+.footer__logo {
+    width: 300px;
+}
+
+.footer__list {
+    list-style: none;
+}
+.footer_list--items:not(:last-child) {
+    margin-bottom: 20px;
+}
+.footer__link:link,
+.footer__link:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #878787
+}
